@@ -1,0 +1,15 @@
+
+<!-- <app-google-signin-button></app-google-signin-button> -->
+<!-- 
+<div >
+    <p>glogin works!</p>
+    <img src="{{ user.photoUrl }}">
+<div>
+  <h4>{{ user.name }}</h4>
+  <p>{{ user.email }}</p>
+</div>
+</div> -->
+<div>
+  <button (click)="loginWithGoogle()">Google</button>
+  <p>{{user |json }}</p>
+</div>

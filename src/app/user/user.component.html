@@ -1,0 +1,109 @@
+
+  <div class="container ">
+  <div class="row m-4 mt-4 p-4 p-4">
+
+
+       <ng-template *ngIf="loginform then login else register" class="mt-4">
+      
+      </ng-template>
+     
+      </div>
+      </div>
+   
+      <ng-template #login>
+        <!-- <div class="col-lg-6 col-md-3 col-sm-12 bg-custo none" id="frame">
+          <h1 class="text-center pt-3">Register Form</h1>
+          <img src="https://t3.ftcdn.net/jpg/01/22/71/96/360_F_122719641_V0yw2cAOrfxsON3HeWi2Sf4iVxhv27QO.jpg" class="img-responsive img-fluid"/>
+        </div> -->
+        <div class="col-lg-6 col-md-8 col-sm-12 bg-custom-form mx-auto" id="frame1">
+        <div class="align-items-ce">
+     
+        <h3 class="text-center pt-3 text-white align-self-ce mt-4 ">{{loginform?"Login":"Register"}} Form</h3>
+        <!-- <marquee
+        direction="right"
+        width="250"
+        height="20"
+        behavior="alternate"
+        style="border:none"> -->
+        <marquee behavior="alternate"> 
+          <!-- <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div> -->
+      </marquee>
+      <!-- </marquee> -->
+        <form action="#" class="p-3" name="loginform" id="loginform">
+          <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="email" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="pwd">PASSWORD</label>
+<span class="form-element">           
+<input type="{{passwordtype? 'password':'text'}}" class="form-control " id="pwd">  <span class="fa fa-eye" (click)="passwordtype=!passwordtype"></span></span>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+          </div>
+      <div class="right">
+          <button type="submit" class="btn btn-primary mb-3 mt-3 animate__animated animate__bounceInRight" >
+ 
+ 
+            <i class="fa-solid fa-arrow-right-to-arc"></i>Login</button>
+           
+<button type="button" class="btn btn-success mb-3 mt-3 m-4" accesskey="c" (click)="loginform=!loginform">{{loginform?"SignUp":"SignIn"}} Form</button>
+</div>
+</form>
+</div>
+</div>
+
+      </ng-template>
+   
+      <ng-template #register>
+        <!-- <div class="col-lg-6 col-md-3 col-sm-12 bg-custo none" id="frame">
+          <h1 class="text-center pt-3">Register Form</h1>
+        </div> -->
+        <div class="col-lg-6 col-md-8 col-sm-12 bg-custom-form mx-auto m-5 p-3" id="frame2">
+        <!-- <h2 class="text-center text-white p-2 pt-4">Register Form In Bootstrap</h2> -->
+        
+        <h3 class="text-center mt-2 text-white " >{{loginform?"Login":"Register"}} Form</h3>
+            <!-- <p class="text-center mb-0 pt-4">Complately Free</p> -->
+            <form action="#" class="p-3">
+              <div class="form-group">
+                <label for="name">NAME</label>
+                <input type="text" class="form-control" name="title" [(ngModel)]="title">
+       
+              </div>
+              <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input type="text" class="form-control" placeholder="Enter Your Name">
+                <!-- <input type="text" class="form-control"id="email"> -->
+              </div>
+          
+              <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">CONFIRM PASSWORD</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <div class="right">
+                <button type="submit" class="btn btn-primary mb-3 mt-3 animate__animated animate__zoomInUp" >CREATE ACCOUNT</button>
+                 
+      <button type="button" class="btn btn-success mb-3 mt-3 m-2" (click)="loginform=!loginform" accesskey="c">{{loginform?"SignUp":"SignIn"}} Form</button>
+      </div>
+            </form>
+           </div>
+      </ng-template>

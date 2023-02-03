@@ -1,0 +1,10 @@
+@media screen and (max-width:30px){
+    .col-sm-0{
+        display: none !important;
+    }
+}
+@media screen and (min-width:900px){
+app-sedenavbar{
+    display: none !important;
+}
+}

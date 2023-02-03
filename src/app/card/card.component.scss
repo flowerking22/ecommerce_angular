@@ -1,0 +1,78 @@
+// .example-card {
+//     max-width: 400px;
+//   }
+  
+//   .example-header-image {
+//     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+//     background-size: cover;
+//   }
+.buy{
+  margin: 0 10px 5px 0;
+  float:right;
+  //border-radius:5px 20px 5px 20px !important;
+}
+.addtocart{
+  float:left !important;
+
+}
+.righ {
+  float:right ;
+} 
+h6{
+  float:right !important;
+  //position:static;
+  //animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+ // animation: forwards;
+  // margin-right: 0px;
+  // margin-top: -15px;
+  // margin-bottom:10px;
+}
+// :root {
+//   --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+// }
+
+body {
+  background: rgb(192, 177, 177) !important;
+}
+
+.card {
+  background: rgb(46, 27, 219);
+  border: 2px solid #b6b0b3;
+  border-radius:20px 20px 0px 0px;
+  color: rgba(184, 175, 175, 0.8);
+  margin-bottom: 2rem;
+}
+img{
+  border-radius:20px 20px 0px 0px;
+}
+h5{
+  color:darkkhaki;
+  font-weight:800;
+  font-style:oblique;
+  font-size: 1.7rem;
+}
+.btn {
+ // color:rgb(35, 207, 29);
+  border: 2px solid;
+  border-image-slice: 1;
+  background: rgb(0, 17, 255) !important;
+  // -webkit-background-clip: text !important;
+  // -webkit-text-fill-color: transparent !important;
+  border-image-source: blue !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+
+  border-radius:10px 5px 10px 5px;
+  color:rgba(255,255,255,0.7);
+}
+
+.btn:hover, .btn:focus {
+      background-color: rgba(251, 252, 255,0.8) !important;
+  // -webkit-background-clip: none !important;
+  // -webkit-text-fill-color: #fff !important;
+  border-color: rgba(251, 252, 255,0.8) !important; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration:double;
+  border-radius:20px 5px 20px 5px;
+  color:blue !important;
+}
